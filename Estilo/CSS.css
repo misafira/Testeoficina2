@@ -24,16 +24,16 @@ nav {
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 1; /* ! */
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /* ! */
     margin: 0;
     padding: 0;
     width: 30%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* q isso*/
 }
 
 li {
@@ -63,7 +63,7 @@ main {
 }
 
 .container {
-    display: flex;
+    display: flex; /* aaa */
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -76,19 +76,19 @@ main {
     padding: 30px;
     color: white;
     border-radius: 10px;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-name: troca_cor;
+    animation-duration: 8s;               /* ! */
+    animation-iteration-count: infinite;   /* ! */
+    animation-name: troca_cor; /* ! */
 }
-
-@keyframes troca_cor {
+                                                                            /* ! */
+@keyframes troca_cor {                                      
     0% {background-color: midnightblue; }
     25% {background-color: steelblue; }
     50% {background-color: blue; }
     75% {background-color: steelblue; }
     100% {background-color: midnightblue; }
 }
-
+                                                                        /* ! */
 .container img {
     border-radius: 10px;
 }
@@ -98,8 +98,8 @@ main {
     background-color: whitesmoke;
     border-style: solid;
     border-width: 50px;
-    border-image-source: url("../Imagens/Borda.png");
-    border-image-slice: 10%;
+    border-image-source: url("../Imagens/Borda.png"); /* ! */
+    border-image-slice: 10%;                           /* ! */
     border-radius: 10%;
     padding: 5px;
 }
@@ -122,7 +122,7 @@ main {
     border-radius: 6px;
     padding: 5px;
 }
-
+                                                       /* ! */
 
 @media (min-width: 768px) {
     nav {
@@ -187,5 +187,5 @@ main {
     }
    }
 
-
+                                              /* ! */
     
